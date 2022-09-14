@@ -61,7 +61,7 @@ Like Fig. 7, but using only column `merge-cost`.
 
 ### Table 1 (cachegrind results)
 
-
+The numbers in Table 1 can be read off using `cg_annotate` or `KCachegrind`.
 
 
 ### List of implemented sorting algorithms
