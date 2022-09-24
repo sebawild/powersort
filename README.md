@@ -1,6 +1,6 @@
 # Accompanying code for paper “Multiway Powersort”
 
-This is the accompanying C++ code for the article “Multiway Powersort” by
+This is the accompanying C++ code for the article [“Multiway Powersort”](https://www.wild-inter.net/publications/multiway-powersort) by
 William Cawley Gelling, Markus Nebel, Benjamin Smith and Sebastian Wild.
 It contains efficient implementations of nearly-optimal adaptive mergesort variants,
 in particular Powersort and Peeksort as well as variants thereof for 4-way merging.
