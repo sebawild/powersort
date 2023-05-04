@@ -216,7 +216,7 @@ int main(int argc, char **argv) {
 		if (ins.substr(0,4) == "runs") {
             if (ins.substr(5, 5) == "sqrtn") // runs-sqrtn
                 inputs = new inputs::random_runs_sqrt_n_generator<elem_t>();
-            else
+            else // runsNNNN
                 inputs = new inputs::random_runs_generator<elem_t>(
                         std::stoi(ins.substr(4)));
         }

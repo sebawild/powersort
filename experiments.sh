@@ -11,6 +11,14 @@ SEED=439569436534
 
 ## Usage: mergesorts [reps] [n1,n2,n3] [inputs] [contestants] [seed] [outfile]
 
+echo "Experiment 2a: 10^7 ints distribution, random runs"
+
+for runs in 3 30 300 3000 30000 300000 3000000
+do
+  ${PREFIX}/mergesorts 3  10000000 runs$runs '*' ${SEED} times-runs$runs-10m-int-dist    >> times-runs$runs-int.out
+done
+
+
 
 echo "Experiment 1: int, random runs, various n"
 
