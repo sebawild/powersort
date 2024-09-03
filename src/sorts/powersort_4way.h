@@ -219,14 +219,16 @@ namespace algorithms {
 
             run_n_power runA = {begin, extend_and_reverse_run_right(begin, end), 0};
             // extend to minRunLen
-            if (diff_t lenA = runA.end - runA.begin < minRunLen) {
+            size_t lenA = runA.end - runA.begin;
+            if (lenA < minRunLen) {
                 runA.end = std::min(end, runA.begin + minRunLen);
                 insertionsort(runA.begin, runA.end, lenA);
             }
             while (runA.end < end) {
                 run runB = {runA.end, extend_and_reverse_run_right(runA.end, end)};
                 // extend to minRunLen
-                if (size_t lenB = runB.end - runB.begin < minRunLen) {
+                size_t lenB = runB.end - runB.begin;
+                if (lenB < minRunLen) {
                     runB.end = std::min(end, runB.begin + minRunLen);
                     insertionsort(runB.begin, runB.end, lenB);
                 }
@@ -410,14 +412,16 @@ namespace algorithms {
 
             run_n_power runA = {begin, extend_and_reverse_run_right(begin, end), 0};
             // extend to minRunLen
-            if (diff_t lenA = runA.end - runA.begin < minRunLen) {
+            size_t lenA = runA.end - runA.begin;
+            if (lenA < minRunLen) {
                 runA.end = std::min(end, runA.begin + minRunLen);
                 insertionsort(runA.begin, runA.end, lenA);
             }
             while (runA.end < end) {
                 run runB = {runA.end, extend_and_reverse_run_right(runA.end, end)};
                 // extend to minRunLen
-                if (size_t lenB = runB.end - runB.begin < minRunLen) {
+                size_t lenB = runB.end - runB.begin;
+                if (lenB < minRunLen) {
                     runB.end = std::min(end, runB.begin + minRunLen);
                     insertionsort(runB.begin, runB.end, lenB);
                 }
