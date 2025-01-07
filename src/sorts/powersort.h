@@ -288,7 +288,7 @@ namespace algorithms {
 
             run_n_power runA = {begin, extend_and_reverse_run_right(begin, end), 0};
             //extend to minRunLen
-            size_t lenA = runB.end - runB.begin;
+            size_t lenA = runA.end - runA.begin;
             if (lenA < minRunLen) {
                 runA.end = std::min(end, runA.begin + minRunLen);
                 insertionsort(runA.begin, runA.end, lenA);
